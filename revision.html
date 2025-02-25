@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    button{
+      width: 20vw;
+      height: 10vh;
+      font-size: 30px;
+      background-color: darkblue;
+      color: white;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: 800;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="
+  let randomGuess = ((Math.random())*1001);
+
+  let guesses = '';
+  if (randomGuess >= 0 && randomGuess < 100) {
+    guesses = 'You are depressed';
+  } else if (randomGuess >= 100 && randomGuess < 300) {
+    guesses = 'You are sad';
+  } else if (randomGuess >= 300 && randomGuess < 450) {
+    guesses = 'You are lonely';
+  } else if (randomGuess >= 450 && randomGuess < 600) {
+    guesses = 'You are good';
+  } else if (randomGuess >= 600 && randomGuess < 750) {
+    guesses = 'You are skeptical';
+  } else if (randomGuess >= 750 && randomGuess < 900) {
+    guesses = 'You are happy';
+  } else if (randomGuess >= 900 && randomGuess < 1000) {
+    guesses = 'You are joyous, grateful and fufiled';
+  } 
+  console.log(guesses);
+  alert(`Your feeling: ${guesses}`);
+  ">My current feeling</button>
+  <script>
+    /*
+    function functionScope () {
+      let randomNumber = ((Math.random())*2001);
+      let secondRamdom = ((Math.random())*1001);
+      let theNumber = randomNumber * secondRamdom;
+      console.log(theNumber);
+    }
+    functionScope ();
+    */
+
+    /*function calculateTax (parameter1) {
+      console.log(parameter1*0.1);
+    }
+    calculateTax (5000);*/
+
+    /*function example2 (parameter2) {
+      let theExample = Math.random();
+      console.log(theExample + parameter2);
+    }
+    example2 (17);
+    example2 (89);
+    example2 (0.9);*/
+
+
+    function calculateTax(cost = 20, taxPercent = 0.1) {
+      console.log(cost*taxPercent);
+    }
+
+    calculateTax (30, 20);
+    calculateTax ();
+
+    /*function age (age1, age2, age3) {
+      let age = 14;
+      console.log(age * age1 / age2 + age3);
+    }
+
+    age(2, 2.4, 20);
+    age(1,2,3);*/
+  </script>
+</body>
+</html>
