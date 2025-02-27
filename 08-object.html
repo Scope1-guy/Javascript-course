@@ -23,7 +23,7 @@
 
     product.name = 'cotton sock' //to change the value of the property 'name'
     console.log(product);//checking it if it has been change 
-    */ 
+     
 
 
     const listOfName = {
@@ -40,12 +40,44 @@
       Occupation:'Full-Stack Developer(Newbie)',
       Net_Worth: 1000000
     }
+    listOfContestant.height = "5'9"
+    delete listOfContestant.Net_Worth;
     console.log(listOfContestant);
 
     console.log(listOfName.Name + ' vs ' + listOfContestant.Name);
     console.log(listOfName.Age + ' vs ' + listOfContestant.Age);
     console.log(listOfName.Occupation + ' vs ' + listOfContestant.Occupation);
     console.log(listOfName.Net_Worth + ' vs ' + listOfContestant.Net_Worth);
+    */
+
+    const product2 = {
+      name: 'shirt',
+      price: 20000,
+      ['delivery-time']: '2pm tomorrow',
+      rating: {
+        stars: 4.5,
+        count: 87
+      },
+      fun: function function1 () {
+        console.log('function inside object');
+      }
+    };
+
+    console.log(product2);
+    console.log(product2.name);
+    console.log(product2['price']);
+
+    console.log(product2['delivery-time']);
+
+    console.log(product2.rating.stars);
+    console.log(product2['rating']['count']);
+    console.log(product2['rating'].stars)
+
+    product2.fun ();
+
+    console.log(typeof console);
+    console.log(typeof console.log);
+    console.log(typeof Math.random);
   </script>
 </body>
 </html>
